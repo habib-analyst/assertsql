@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assertsql"
+version = "0.1.0"
+description = "Counterexample-guided text-to-SQL repair with synthesized semantic assertions. No LLM."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/assertsql"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["assertsql*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
